@@ -1,0 +1,17 @@
+print ("Este programa mide tu altura")
+respuesta = "s"
+while respuesta == "s":
+    estatura = int(input("Ingrese su estatura en centimetros:"))
+    if estatura < 30:
+        print("Ingrese un número válido en centimetros[!]")
+    elif estatura > 220:
+        print("Ingrese un número válido en centimetros[!]")
+    else:
+        print("gracias por leer su estatura con este programa")
+        if estatura < 150:
+            print("Eres bajo")
+        elif estatura < 185:
+            print("Eres normal")
+        else:
+            print("Eres alto")
+    respuesta = input("¿Quiere ejecutar nuevamente? (s/n):").lower()
