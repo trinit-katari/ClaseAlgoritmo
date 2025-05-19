@@ -7,7 +7,7 @@ while respuesta == "s":
     elif estatura > 220:
         print("Ingrese un número válido en centimetros[!]")
     else:
-        print("gracias por leer su estatura con este programa")
+        print("gracias por leer su estatura con este programa")#esto no debería ir
         if estatura < 150:
             print("Eres bajo")
         elif estatura < 185:
