@@ -1,6 +1,6 @@
 print ("Este programa mide tu altura")
 for i in range(15):
-    estatura = int(input("Ingrese su estatura en centimetros:"))
+    estatura = float(input("Ingrese su estatura en centimetros:"))
     if estatura < 30:
             print("Ingrese un número válido en centimetros[!]")
     elif estatura > 220:
