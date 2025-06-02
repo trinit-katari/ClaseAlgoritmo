@@ -1,0 +1,11 @@
+M = 10  
+A = []
+B = []
+for i in range(M):
+    A.append(float(input(f"Ingrese dato n°{i+1} para el arreglo A: ")))
+for i in range(M):
+    B.append(float(input(f"Ingrese dato n°{i+1} para el arreglo B: ")))
+C = [round(A[i] - B[i], 2) for i in range(M)] 
+
+print("\nArreglo C (resta de A y B): ")
+print("|".join([f"{n:.2f}" for n in C]))
