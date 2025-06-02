@@ -1,0 +1,7 @@
+multiples_de_7 = []
+numero = 700
+while len(multiples_de_7) < 10:
+    if numero % 7 == 0:
+        multiples_de_7.append(numero)
+    numero += 1  
+print(multiples_de_7)
