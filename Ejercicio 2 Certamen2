@@ -1,0 +1,20 @@
+matriz = []
+
+fila = 4
+columnas = 4
+
+for f in range(fila):
+    matriz.append([])
+    for c in range (columnas):
+        num = int(input(f"Ingrese su numero {f+1},{c+1}: "))
+        if num >30 and num<80:
+            
+            matriz[f].append(num)
+        else: 
+            c=c-1
+            f=f-1
+            print(f"Ingrese números enteros entre el 30 al 80")
+
+diagonal_inversa =[matriz[i][fila-1-i] for i in range(fila)]
+print("Todos los datos de la matriz:" ,matriz)
+print("La diagonal inversa es:",diagonal_inversa)
