@@ -1,0 +1,16 @@
+E = []
+dimension = 35
+for i in range(dimension):
+    estatura = (float(input(f"Ingrese la estatura del {i+1}° alumno: ")))
+    E.append(estatura)
+    suma = sum(E)
+
+
+promedio = (suma)/dimension
+alta = max(E)
+baja = min (E)
+print("El arreglo de las estaturas es: ",E)
+print("La suma de todas las estaturas: ",suma)
+print ("El promedio de las estaturas: ",promedio)
+print("La estatura mayor es:", alta)
+print("La estatura menor es:" ,baja)
